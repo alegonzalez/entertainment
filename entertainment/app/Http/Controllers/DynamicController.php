@@ -15,7 +15,7 @@ class DynamicController extends Controller
      */
     public function index()
     {
-        
+
     }
 
     /**
