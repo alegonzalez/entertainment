@@ -1,5 +1,24 @@
 @extends('layout.basic')
 @section('content')
+<script type="text/javascript" src="assets/js/jquery_ui_animations.js"></script>
+  <center><h1>Entretenimiento <span class="glyphicon glyphicon-thumbs-up"></span></h1></center>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+      <span class="sr-only">60% Complete</span>
+    </div>
+  </div>
+  <div class="col-md-3 contentButtonAction">
+    <a id="drawButton" class="btn btn-success btn-lg drawScreen">Dibujar</a>
+  </div>
+  <div class="col-md-3 contentButtonAction">
+    <a href="{{url('/accommodate')}}" id="order" class="btn btn-success btn-lg drawScreen">Reconocer</a>
+  </div>
+  <div class="col-md-3 contentButtonAction">
+    <a href="" class="btn btn-success btn-lg drawScreen">Escuchar</a>
+  </div>
+  <div class="col-md-3 contentButtonAction addElement">
+    <button type="button"  class="btn btn-success btn-lg drawScreen">Asociar</button>
+  </div>
   <div id="content" class="col-md-8 col-md-offset-2">
     <div class="content-box">
       <!-- jQuery UI -->

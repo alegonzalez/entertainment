@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProgressesTable extends Migration
+class CreatePracticesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,10 @@ class CreateProgressesTable extends Migration
      */
     public function up()
     {
-        Schema::create('progresses', function (Blueprint $table) {
+        Schema::create('practices', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('progress');
-            $table->integer('id_user');
+            $table->string('descripcion');
             $table->timestamps();
-            $table->foreign('id_user')
-            ->references('id')
-            ->on('users');
         });
     }
 
@@ -30,6 +26,6 @@ class CreateProgressesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('progresses');
+        Schema::drop('practices');
     }
 }

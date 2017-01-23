@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypeDynamicsTable extends Migration
+class CreateStoragesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,12 @@ class CreateTypeDynamicsTable extends Migration
      */
     public function up()
     {
-      Schema::create('typeDynamics', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('description',100);
-          $table->timestamps();
-      });
+        Schema::create('storages', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('description');
+            $table->integer('id_type_storage');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -26,6 +27,6 @@ class CreateTypeDynamicsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('typeDynamics');
+        Schema::drop('storages');
     }
 }

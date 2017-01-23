@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('dynamic.index');
 });
+Route::get('/accommodate', 'DynamicController@index');
 
 /*
 |--------------------------------------------------------------------------

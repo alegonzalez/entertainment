@@ -31,6 +31,29 @@ body {
 .draw{
   margin-top: 14%;
 }
-#content{
-  margin-top: 14%;
+#content {
+  margin-top: 3%;
+}
+.contentButtonAction {
+  margin-top: 5%;
+}
+/*Test*/
+.placeholder {
+  border: 1px solid green;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px #888;
+  -moz-box-shadow: 0px 0px 10px #888;
+  box-shadow: 0px 0px 10px #888;
+}
+.tile {
+  height: 45px;
+}
+.grid {
+  margin-top: 1em;
+}
+.contentDynamic {
+  background-color: rgba(52, 64, 68, 0.8);
+  background: rgba(52, 64, 68, 0.8);
+  color: rgba(52, 64, 68, 0.8);
+  margin-top: 2%;
 }
